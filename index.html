@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Site">
+    <meta name="keywords" content="HTML,CSS,JS,Bootstrap">
+    <meta name="author" content="Kelly Cole">
+
+    <title>Personal Site</title>
+		<!-- css -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    
+    <!-- js -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/smoothscroll.js"></script> 
+
+    <!-- font -->
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Arvo|Cormorant|Cormorant+Garamond|Cormorant+Infant|Lora|PT+Sans|PT+Serif|Pacifico|Poiret+One|Quicksand|Raleway|Scope+One|Varela+Round" >
+
+    <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'> -->
+    <!-- <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'> -->
+		<style>
+			body{
+				font-family: 'PT Sans', sans-serif;
+				/*font-family: 'Lora', serif;
+			
+				font-family: 'Raleway', sans-serif;
+				font-family: 'PT Serif', serif;
+				font-family: 'Arvo', serif;
+				font-family: 'Poiret One', cursive;
+				font-family: 'Pacifico', cursive;
+				font-family: 'Varela Round', sans-serif;
+				font-family: 'Quicksand', sans-serif;
+				font-family: 'Cormorant', serif;
+				font-family: 'Cormorant Garamond', serif;
+				font-family: 'Cormorant Infant', serif;
+				font-family: 'Scope One', serif;*/
+			}
+			.circle-img{
+				border-radius: 50%;
+				width:100px;
+			}
+			.slideshow{
+				width:350px;
+			}
+			.favicon{
+				width:60px;
+				padding-left:10px;
+				margin: auto;
+				padding-bottom: 20px;
+			}
+			.chunk{
+		    padding-top: 130px;
+		    padding-bottom: 130px;
+			}	
+			#projects{
+				background-color: #d3d3c4;
+			}
+			#interests{
+				/*background-color:#f0cbb9;*/
+				background-color:#F98D80;
+			}
+			.proj{
+				padding-top:40px;
+				padding-bottom:40px;
+			}
+			#CV h3{
+				padding-top:35px;
+				padding-bottom: 20px;
+			}
+			.carousel-indicators{
+			   bottom: -43px;
+			}
+			.proj a{
+				    color: #4a36e2;
+			}
+		</style>
+  </head>
+
+  <body data-spy="scroll" data-offset="0" data-target="#navigation">
+
+	<section id="namecard" name="namecard"></section>
+	<div id="namecard" name="intro" class="centered chunk">
+		<h1>Kelly M. Cole</h1>
+		<h3>developer & generalist</h3>
+		<h3>computer engineer, uiuc 2016</h3>
+	</div>
+
+    <!-- Fixed navbar -->
+	    <div id="navigation" class="navbar navbar-default navbar-fixed-top">
+	      <div class="container">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <!-- <a class="navbar-brand" href="#"><b>Kelly M. Cole</b></a> -->
+	        </div>
+	        <div class="collapse navbar-collapse">
+	          <ul class="nav navbar-nav">
+	            <li class="active"><a href="#home" class="smothscroll">home</a></li>
+	            <li><a href="#projects" class="smothscroll">projects</a></li>
+	            <!-- <li><a href="#interests" class="smothScroll">interest</a></li> -->
+	            <li><a href="#resume" class="smothScroll">resume</a></li>
+	            <li><a href="#contact" class="smothScroll">contact</a></li>
+	          </ul>
+	        </div><!--/.nav-collapse -->
+	      </div>
+	    </div>
+
+
+
+	<section id="home" name="home"></section>
+	<div id="headerwrap" class="chunk">
+	    <div class="container">
+	    	<div class="row">	    		
+	    		<div class="col-lg-2"></div>
+	    		<div class="col-lg-8">
+					<h3>a little about myself.</h3>
+	    			<p>
+	    			Chicago native. Graduated with a Bachelors of Science from the University of Illinios, Urbana-Champaign (UIUC) with a degree in Computer Engineering. With a wide array of interests, I'm still working on getting life figured out, looking for an exciting full-time job in software development. <br><br>
+
+	    			I presently work at SATCO, INC. an small international consulting engineering firm that provides engineering solutions for power and petrochemical plants across South East Asia. I also work part time as a software developer for the IDEALL Lab at the College of Education  with a research group focused on developing digital ecologies that are conducive to collaborative interaction among students. 
+	    			</p>
+	    		</div>
+	    		<div class="col-lg-2"></div>
+	    	</div>
+	    </div> <!--/ .container -->
+	</div><!--/ #headerwrap -->
+
+	<section id="projects" name="projects"></section>
+	<div id="projects" class="chunk">
+		<div class="container">
+    	<div class="row">	    		
+    		<div class="col-lg-2"></div>
+    		<div class="col-lg-8">
+					<h2><b>recent projects.</b></h2>
+					<div class="row proj">			<!--PROJECT #1-->
+						<div class="col-xs-6">
+							<h3>Ingredient Printer</h3>
+							<p>
+								A Bluetooth enabled machine that prints out baking ingredients in specified amounts<br><br>
+								Technologies used: 
+								C/C++,
+								HTML/CSS,
+								Javascript, EagleCAD,
+								Cordova/Phone gap,
+								Bluetooth Low Energy,
+								Elec
+						</div>
+						<div class="col-xs-6">
+			<div id="carousel-example-generic" class="carousel slide">
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+		    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+		    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		  </ol>
+		
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner">
+		    <div class="item active">
+		      <img src="img/proj1-1.png" alt="">
+		    </div>
+		    <div class="item">
+		      <img src="img/proj1-2.png" alt="">
+		    </div>		    
+		    <div class="item">
+		      <img src="img/proj1-3.png" alt="">
+		    </div>
+			</div><!-- /container -->
+		</div>	
+						</div>
+					</div>
+					<div class="row proj">			<!--PROJECT #-->
+						<div class="col-xs-6">
+			<div id="carousel-example-generic" class="carousel slide">
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+		    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+		  </ol>
+		
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner">
+		    <div class="item active">
+		      <img src="img/proj2-1.png" alt="">
+		    </div>
+		    <div class="item">
+		      <img src="img/proj2-2.png" alt="">
+		    </div>
+			</div><!-- /container -->
+		</div>	
+						</div>
+						<div class="col-lg-6 col-xs-6">
+							<h3>Food For Thought</h3>
+		    			<p>An environmental literacies project displayed on a 55” MultiTaction Cell (think large iPad) where students could drag and drop foods onto the plate too see different metrics that helped them gauge the environmental impact of their food choices </p>
+	
+							<h4>Press Releases</h4>					 
+									<a href="https://news.illinois.edu/blog/view/6367/363728">Illinois News Bureau</a>,
+									<a href="http://www.takepart.com/article/2016/06/05/dinner-app-carbon-footprint">Takepart</a>,
+									<a href="http://btn.com/2016/05/28/btn-livebig-illini-app-gives-kids-something-to-chew-over/">Big Ten Network</a>,<br>
+									<a href="http://bigthink.com/stefani-cox/healthy-eating-app-teaches-students-climate-change?utm_campaign=Echobox&utm_medium=Social&utm_source=Facebook">Big Think</a>,
+									<a href="http://www.business-standard.com/article/pti-stories/new-computer-app-encourages-kids-to-choose-eco-friendly-meals-116052300789_1.html">Business Standard</a>
+						</div>
+					</div>
+					<div class="row proj">			<!--PROJECT #-->
+						<div class="col-lg-6 col-xs-6">
+							<h3>Snow Problem</h3>
+		    			<i> Google’s Best Hack @ HackIllinois 2015</i><br><br>
+		    			<p>Language learning application which allowed users to have conversations in different languages with an artificially intelligent ‘bot’. <br><br>
+
+		    			Technologies Used: Node.js, CleverBot, Google Translate API</p>
+						</div>
+						<div class="col-lg-6 col-xs-6">
+							<div id="carousel-example-generic" class="carousel slide">
+							  <!-- Indicators -->
+							  <ol class="carousel-indicators">
+							    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+							    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+							    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+							    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+							  </ol>
+						
+							  <!-- Wrapper for slides -->
+							  <div class="carousel-inner">
+							    <div class="item active">
+							      <img src="img/proj3-1.png" alt="">
+							    </div>
+							    <div class="item">
+							      <img src="img/proj3-2.png" alt="">
+							    </div>		    
+							    <div class="item">
+							      <img src="img/proj3-3.png" alt="">
+							    </div>
+							    <div class="item">
+							      <img src="img/proj3-4.png" alt="">
+							    </div>
+								</div><!-- /container -->
+							</div>	
+						</div>
+					</div>
+					<div class="row proj">			<!--PROJECT #-->
+						<div class="col-lg-6 col-xs-6">
+							<img class="slideshow" src="img/proj4.png" alt="">
+					<!-- 		<video width="250" height="240" controls>
+  							<source src="video/IMG_1790.m4v" type="video/IMG_1790.m4v">
+ 								 Your browser does not support the video tag.
+							</video> -->
+						</div>
+						<div class="col-lg-6 col-xs-6">
+		    			<h3>Dual Player Tetris</h3>
+		    			<p>Technologies Used: SystemVerilog (Quartus), Altera DE2 FPGA Board, C (Nios II) <br><br>
+
+		    			Technologies Used: Node.js, CleverBot, Google Translate API</p>
+		    		</div>
+					</div>
+
+
+					<div class="row proj">			<!--PROJECT #-->
+						<div class="col-lg-6 col-xs-6">
+							<h3>Queue and A</h3>
+							<p>
+								A web app that allows students to post questions that arise during class, syncing the questions based on priority (up/down voting).<br><br>
+
+								Technologies used: Firebase, HTML/CSS, Javascript
+							</p>
+						</div>
+						<div class="col-lg-6 col-xs-6">
+			<div id="carousel-example-generic" class="carousel slide">
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+		    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+		  </ol>
+		
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner">
+		    <div class="item active">
+		      <img src="img/proj7-1.png" alt="">
+		    </div>
+		    <div class="item">
+		      <img src="img/proj7-2.png" alt="">
+		    </div>
+			</div><!-- /container -->
+		</div>	
+
+						</div>
+					</div>
+
+					<div class="row proj">			<!--PROJECT #-->
+						<div class="col-lg-6 col-xs-6">
+							<img class="slideshow" src="img/proj6.png" alt="">
+						</div>
+						<div class="col-lg-6 col-xs-6">							
+							<h3>WebDev Workshop</h3>
+							<p>
+								Held a web development workshop for my sorority (Alpha Omega Epsilon), teaching other girls how to build websites of their own.
+							</p></div>
+					</div>
+
+				<div class="row proj">			<!--PROJECT #-->
+						<div class="col-lg-6 col-xs-6">
+							<h3>the loneliest datapath</h3>
+							<p>
+								Built a pipelined CPU with the following features: <br><br> Extended instruction set (MULT/DIV), cache arbiter, L1 (instruction/data), Unified L2 Cache, Data forwarding/Hazard Detection, Branch predition (Branch table buffer, branch history table), Allocation optimization (eviction write back buffer)<br><br>
+								Technologies used: 
+								SystemVerilog, Quartus, ModelSim (debugging)
+							</p>
+						</div>
+						<div class="col-lg-6 col-xs-6">
+						</div>
+				</div>
+<!-- 					<div class="row proj">			
+						<div class="col-xs-6"></div>
+						<div class="col-xs-6"></div>
+					</div> -->
+					<div class="row">
+						<div class="col-xs-6">   
+  			    </div>
+						<div class="col-xs-6"> 
+  					</div>
+    			</div>
+    		</div>
+    		<div class="col-lg-2"></div>
+    	</div>
+    </div>
+  </div> 
+	
+<!-- 	<section id="interests" name="interests"></section>
+	<div id="interests" class="chunk">
+	 <div class="container">
+    	<div class="row">	    		
+    		<div class="col-lg-2"></div>
+    		<div class="col-lg-8">
+					<h2>here are a few of my favorite things.</h2>
+					<div class="row">
+    				<div class="col-sm-3">
+    					<img class="circle-img" src="img/img1.jpg">
+    				</div>
+    				<div class="col-sm-3">
+    					<img class="circle-img" src="img/img2.jpg">
+    				</div>
+    				<div class="col-sm-3">
+    					<img class="circle-img" src="img/img3.jpg">
+    				</div>
+    				<div class="col-sm-3">
+    					<img class="circle-img" src="img/img4.jpg">
+    				</div>
+					</div>
+    		</div>
+    		<div class="col-lg-2"></div>
+    	</div>
+
+    	<br><br>
+    	
+    	<div class="row">
+				<div class="col-lg-2"></div>
+    		<div class="col-lg-8">
+					<div class="row">
+    				<div class="col-sm-1"></div>
+    				<div class="col-sm-3">
+    					<img class="circle-img" src="img/img1.jpg">
+    				</div>
+    				<div class="col-sm-3">
+    					<img class="circle-img" src="img/img2.jpg">
+    				</div>
+    				<div class="col-sm-3">
+    					<img class="circle-img" src="img/img3.jpg">
+    				</div>
+    				<div class="col-sm-1"></div>
+					</div>
+    		</div>
+    		<div class="col-lg-2"></div>
+    	</div>
+    </div>
+  </div>  -->
+
+
+	<!-- FEATURES WRAP -->
+	<section id="resume" name="resume"></section>
+	<div id="CV">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2"></div>
+				<div class="col-lg-8">
+					<h2>curriculum vitae.</h2><a href="docs/KellyCole2016.pdf">[download]</a><br>
+
+					<div class="col-lg-3"></div>
+					<div class="col-lg-9"><h3>WORK EXPERIENCE</h3></div>
+
+					<div class="col-lg-3">5/2015 - Present Champaign, IL</div>
+					<div class="col-lg-9">
+							<h4><b>IL Digital Ecologies and Learning Lab, Software Developer</b></h4>
+							<p>Set up technical demos for the launch of a $600,000 lab made to research collaborative interaction in digital ecologies at UIUC’s College of Education. Developed multi-touch web application in a research group under the direction of Professor Emma Mercier.</p>
+					</div>
+					<div class="col-lg-3">5/2008 - Present Glenview, IL</div>
+					<div class="col-lg-9">
+							<h4><b>SATCO, INC., Student Intern</b></h4>
+							<p>Reviewed technical drawings and strategic planning with leading boiler manufacturer Babcock and Wilcox. Improved sales through customer engagement over the phone, IT support</p>
+					</div>
+					<div class="col-lg-3">5/2015 - 8/2015 Champaign, IL</div>
+					<div class="col-lg-9">
+							<h4><b>AMDOCS, Technical and Business Operations Agent</b></h4>
+							<p>Developed software using JDeveloper that provides information necessary to ensure high availability on company servers. </p>
+					</div>
+					<div class="col-lg-3">5/2014 - 5/2015 Champaign, IL</div>
+					<div class="col-lg-9">
+							<h4><b>ECE ELECTRONICS SERVICE SHOP, Student Employee</b></h4>
+							<p>Installed lab equipment, put together power supplys for ECE 385 lab kits in addition to performing miscellaneous electrical work under intense time pressure in anticipation of the opening of the new department building.</p>
+					</div>
+
+					<div class="col-lg-3"></div>
+					<div class="col-lg-9"><h3>LEADERSHIP EXPERIENCE</h3></div>
+
+					<div class="col-lg-3">5/2014 - 5/2016 Champaign, IL</div>
+					<div class="col-lg-9">
+							<h4><b>UIUC CHINESE CLUB, Co-Founder</b></h4>
+							<p>Started a 130 member strong immersive Chinese language club.</p>
+					</div>
+					<div class="col-lg-3">12/2013 - 12/2015 Champaign, IL</div>
+					<div class="col-lg-9">
+							<h4><b>ALPHA OMEGA EPSILON, Technology Chair</b></h4>
+							<p>As webmaster of aoetheta.org I hosted a Web Development Workshop Series for a group of 70 members to better enable women engineers in developing their own websites. *Elected for three consecutive terms</p>
+					</div>
+					<div class="col-lg-3">9/2012 - 5/2014 Champaign, IL</div>
+					<div class="col-lg-9">
+							<h4><b>US NROTC, Webmaster, Squad Leader</b></h4>
+							<p>As Battalion Communications Officer, managed an official government website. Also participated in rigorous disciplinary training and leadership laboratories.</p>
+					</div>
+					<div class="col-lg-3">12/2013 - 10/2014 Champaign, IL</div>
+					<div class="col-lg-9">
+							<h4><b>ILLINI UNION BOARD, Director of Musicals and Drama</b></h4>
+							<p>Managed a team of thirty-five members to produce a large scale, sold out Broadway Musical, Rent featuring a live pit band.</p>
+					</div>
+				<div class="col-lg-2"></div>
+		</div>
+		</div><!--/ .container -->
+	</div><!--/ #features -->
+	</div>
+
+	<section id="contact" name="contact"></section>
+	<div id="footerwrap">
+		<div class="container">
+			<div class="row">
+    		<div class="col-lg-2"></div>
+    		<div class="col-lg-8">
+					<h3>want to know more?<br> say hello!</h3>
+				</div>	
+    		<div class="col-lg-2"></div>
+    	</div>
+			<div class="row centered">
+				<div class="col-lg-12">
+				<h3>Kelly Cole</h3>
+				<p>
+					<a> colekellym@gmail.com</a>
+					<br/>
+					224/730-0487	
+				</p>
+			</div>
+			</div>
+	</div>
+		<div class="container">
+				<div class="row">
+					<div class="col-sm-12 centered">
+						<a href="https://www.facebook.com/kelly.cole.735"><img class="favicon" src="img/favicon/fb.png"></a>
+						<a href="https://www.github.com/kmcole2"><img class="favicon" src="img/favicon/github.png"></a>
+						<a href="#"><img class="favicon" src="img/favicon/linkedin.png"></a>
+					</div>
+				</div>
+		</div>
+	</div>
+	<div id="footer">
+	<div class="row centered">
+		Created by Kelly Cole
+		<script type="text/javascript">
+  document.write(new Date().getFullYear());
+</script>
+</div>
+</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
+	<script>
+	$('.carousel').carousel({
+	  interval: 4500,
+	  pause:'false'
+	 })
+	</script>
+  </body>
+</html>
