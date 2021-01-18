@@ -84,10 +84,11 @@
 	<section id="namecard" name="namecard"></section>
 	<div id="namecard" name="intro" class="centered chunk">
 		<h1>Kelly M. Cole</h1>
-		<h3>developer & generalist</h3>
+		<h3>SWE & lifelong learner</h3>
 		<br>
-		<h3>bs in computer engineer, uiuc 2016</h3>
-		<h3>ms in computer science, u of m (dearborn) 2019</h3>
+		<h3>"everything is figureoutable"</h3>
+		<!-- <h3>” Assume that the person that will maintain your code is an armed psychopath, who has limited patience and knows your home address.”</h3> -->
+
 	</div>
 
     <!-- Fixed navbar -->
@@ -99,7 +100,7 @@
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
 	          </button>
-	          <!-- <a class="navbar-brand" href="#"><b>Kelly M. Cole</b></a> -->
+	          <a class="navbar-brand" href="#"><b>Kelly M. Cole</b></a>
 	        </div>
 	        <div class="collapse navbar-collapse">
 	          <ul class="nav navbar-nav">
@@ -123,9 +124,8 @@
 	    		<div class="col-lg-8">
 					<h3>a little about myself.</h3>
 	    			<p>
-	    			Chicago native. Graduated with a Bachelors of Science from the University of Illinios, Urbana-Champaign (UIUC) with a degree in Computer Engineering. With a wide array of interests, I'm still working on getting life figured out, looking for an exciting full-time job in software development. <br><br>
-
-	    			I presently work at SATCO, INC. an small international consulting engineering firm that provides engineering solutions for power and petrochemical plants across South East Asia. I also work part time as a software developer for the IDEALL Lab at the College of Education  with a research group focused on developing digital ecologies that are conducive to collaborative interaction among students. 
+	    			Chicago native living in Metro Detroit. Joined Ford's first in-vehicle infotainment software team, just after they decided to bring software in-house. It's a bit of a startup feel in a large corporate setting. Hired as an Embedded SWE, my role changed with the needs of the project and I jumped on the opportunity to learn and work with everything from device drivers, platform software to front-end HMI application code. 
+	    			<br><br>Pursued a full-time Master's in CS while also working full-time (not something I'd exactly recommend). In my spare time I also enjoy woodworking and reading.
 	    			</p>
 
 	    		</div>
@@ -141,6 +141,40 @@
     		<div class="col-lg-2"></div>
     		<div class="col-lg-8">
 					<h2><b>recent projects.</b></h2>
+				<div class="row proj">			<!--PROJECT #-->
+						<div class="col-lg-6 col-xs-6">
+							<h3>bulb dude <br>(sunrise simulation clock)</h3>
+							<p>
+								Built a 120VAC robot-figured sunrise simulation alarm clock/lamp with companion iOS app. Step down AC/DC power converter with ESP12S Wi-Fi enabled microcontroller. Google assistant integration via self hosted HTTPS web server.<br><br>
+								Technologies used: <br> ngrok, express web framework, Google Actions, proxy server, swift, C/C++, javascript, JSON
+							</p>
+						</div>
+						<div class="col-lg-6 col-xs-6">
+						</div>
+						<div class="col-lg-6 col-xs-6">
+							<div id="carousel-example-generic" class="carousel slide">
+							  <!-- Indicators -->
+							  <ol class="carousel-indicators">
+							    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+							    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+							    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+							  </ol>
+						
+							  <!-- Wrapper for slides -->
+							  <div class="carousel-inner">
+							    <div class="item active">
+							      <img src="img/proj10-2.png" alt="">
+							    </div>
+							    <div class="item">
+							      <img src="img/proj10-1.png" alt="">
+							    </div>	
+							    <div class="item">
+							      <img src="img/proj10-3.png" alt="">
+							    </div>		    
+								</div><!-- /container -->
+							</div>	
+						</div>
+				</div>
 				<div class="row proj">			<!--PROJECT #-->
 						<div class="col-lg-6 col-xs-6">
 							<div id="carousel-example-generic" class="carousel slide">
@@ -165,7 +199,7 @@
 							<h3>split flap clock</h3>
 							<p>
 								Synchronized time with ntp server on boot up after network connection made. Stepper motor had no absolute positioning, so after a one time calibration current time would be written to file, for future retreival after a reboot. <br><br>
-								Technologies used: <br> systemd, ntp server for time sync, <a href = "https://github.com/gavinlyonsrepo/RpiMotorLib"> RpiMotorLib </a>, python
+								Technologies used: <br> systemd, ntp server for time sync, RpiZero + W <a href = "https://github.com/gavinlyonsrepo/RpiMotorLib"> RpiMotorLib </a>, python
 							</p>
 						</div>
 						<div class="col-lg-6 col-xs-6">
@@ -184,6 +218,7 @@
 								Javascript, EagleCAD,
 								Cordova/Phone gap,
 								Bluetooth Low Energy
+								<a href="https://courses.engr.illinois.edu/ece445/getfile.asp?id=8104"> Documentation </a>
 						</div>
 						<div class="col-xs-6">
 			<div id="carousel-example-generic" class="carousel slide">
@@ -418,53 +453,91 @@
 	<div id="CV">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-2"></div>
-				<div class="col-lg-8">
-					<h2>curriculum vitae.</h2><a href="docs/KellyCole2016.pdf">[download]</a><br>
+				<div class="col-lg-1"></div>
+				<div class="col-lg-10">
+					<h2>curriculum vitae.</h2><a href="docs/KellyColeResume.pdf">[download]</a><br>
 
-					<div class="col-lg-3"></div>
+					<div class="col-lg-2"></div>
 					<div class="col-lg-9"><h3>WORK EXPERIENCE</h3></div>
-
-					<div class="col-lg-3">5/2015 - Present Champaign, IL</div>
+					<div class="col-lg-2">8/2019 - Present Dearborn, MI</div>
+					<div class="col-lg-9">
+							<h4><b>Ford Mo Co, GSR6 Product Development Embedded SWE</b></h4>
+							<p>Added responsibilities and involvements:
+							<br>- Cross functional work with other sub-feature teams. Conducted GDB core dump, PCAP and CAN bus
+							analysis (using CANoe) to debug inter-ECU defects. Direct communication with third-party partners to
+							debug library and server issues on bench and in-vehicle.
+							<br>- Contributions to service architecture design (UML). Technical writing and trainings sessions held.
+							<br>- Delivered IP radio and cloud connectivity vehicle features, supporting 8+ vehicle programs to date
+							<br>- Familiar with IPC techniques like shared memory, message queues (ie. MQTT, D-BUS, etc)
+							<br>- Developed a custom GUI-based test utility to send CAN messages to SYNC hardware to support
+							developers on native linux machines for which no equivalent existed.
+							<br>- Bash and python scripting to automate workflow.
+							<br>- Spark Project, worked on a three member team porting SYNC hardware to Linux OS for proof-of-concept
+							project that if fully implemented would save Ford millions of dollars in royalty and service fees.
+							</p>
+					</div>
+					<div class="col-lg-2">1/2017 - 8/2019 Dearborn, MI</div>
+					<div class="col-lg-9">
+							<h4><b>Ford Mo Co, GSR5 Product Development Embedded SWE</b></h4>
+							<p>Developed Platform & HMI software for Ford’s QNX based infotainment system (SYNC). Implemented HMI screen flows and supporting backend features in QML/JS/C++ on an agile scrum team under intense delivery deadlines. Delivered SAT radio features, implementing a USB SiriusXM X40 firmware updater.</p>
+					</div>
+					<div class="col-lg-2">5/2015 - 8/2016 Champaign, IL</div>
 					<div class="col-lg-9">
 							<h4><b>IL Digital Ecologies and Learning Lab, Software Developer</b></h4>
 							<p>Set up technical demos for the launch of a $600,000 lab made to research collaborative interaction in digital ecologies at UIUC’s College of Education. Developed multi-touch web application in a research group under the direction of Professor Emma Mercier.</p>
 					</div>
-					<div class="col-lg-3">5/2008 - Present Glenview, IL</div>
+					<div class="col-lg-2">5/2008 - Present Glenview, IL</div>
 					<div class="col-lg-9">
 							<h4><b>SATCO, INC., Student Intern</b></h4>
 							<p>Reviewed technical drawings and strategic planning with leading boiler manufacturer Babcock and Wilcox. Improved sales through customer engagement over the phone, IT support</p>
 					</div>
-					<div class="col-lg-3">5/2015 - 8/2015 Champaign, IL</div>
+					<div class="col-lg-2">5/2015 - 8/2015 Champaign, IL</div>
 					<div class="col-lg-9">
 							<h4><b>AMDOCS, Technical and Business Operations Agent</b></h4>
 							<p>Developed software using JDeveloper that provides information necessary to ensure high availability on company servers. </p>
 					</div>
-					<div class="col-lg-3">5/2014 - 5/2015 Champaign, IL</div>
+					<div class="col-lg-2">5/2014 - 5/2015 Champaign, IL</div>
 					<div class="col-lg-9">
 							<h4><b>ECE ELECTRONICS SERVICE SHOP, Student Employee</b></h4>
 							<p>Installed lab equipment, put together power supplys for ECE 385 lab kits in addition to performing miscellaneous electrical work under intense time pressure in anticipation of the opening of the new department building.</p>
 					</div>
 
-					<div class="col-lg-3"></div>
+					<div class="col-lg-2"></div>
+					<div class="col-lg-9"><h3>EDUCATION</h3></div>
+
+					<div class="col-lg-2">8/2018 - 12/2019 Champaign, IL</div>
+					<div class="col-lg-9">
+							<h4><b>University of Michigan, Dearborn</b></h4>
+							<p>M.S. Computer Science - System Software</p>
+							
+					</div>
+					<div class="col-lg-2">8/2012 - 5/2016 Champaign, IL</div>
+					<div class="col-lg-9">
+							<h4><b>University of Illinois, Champaign-Urbana</b></h4>
+							<p>B.S. Computer Engineering</p>
+					</div>
+
+
+
+					<div class="col-lg-2"></div>
 					<div class="col-lg-9"><h3>LEADERSHIP EXPERIENCE</h3></div>
 
-					<div class="col-lg-3">5/2014 - 5/2016 Champaign, IL</div>
+					<div class="col-lg-2">5/2014 - 5/2016 Champaign, IL</div>
 					<div class="col-lg-9">
 							<h4><b>UIUC CHINESE CLUB, Co-Founder</b></h4>
 							<p>Started a 130 member strong immersive Chinese language club.</p>
 					</div>
-					<div class="col-lg-3">12/2013 - 12/2015 Champaign, IL</div>
+					<div class="col-lg-2">12/2013 -12/2015 Champaign, IL</div>
 					<div class="col-lg-9">
 							<h4><b>ALPHA OMEGA EPSILON, Technology Chair</b></h4>
 							<p>As webmaster of aoetheta.org I hosted a Web Development Workshop Series for a group of 70 members to better enable women engineers in developing their own websites. *Elected for three consecutive terms</p>
 					</div>
-					<div class="col-lg-3">9/2012 - 5/2014 Champaign, IL</div>
+					<div class="col-lg-2">9/2012 - 5/2014 Champaign, IL</div>
 					<div class="col-lg-9">
 							<h4><b>US NROTC, Webmaster, Squad Leader</b></h4>
 							<p>As Battalion Communications Officer, managed an official government website. Also participated in rigorous disciplinary training and leadership laboratories.</p>
 					</div>
-					<div class="col-lg-3">12/2013 - 10/2014 Champaign, IL</div>
+					<div class="col-lg-2">12/2013 -10/2014 Champaign, IL</div>
 					<div class="col-lg-9">
 							<h4><b>ILLINI UNION BOARD, Director of Musicals and Drama</b></h4>
 							<p>Managed a team of thirty-five members to produce a large scale, sold out Broadway Musical, Rent featuring a live pit band.</p>
